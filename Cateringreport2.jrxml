@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4998a8de-9dfa-4d14-a944-23998121cd7a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from order_table]]>
+	</queryString>
+	<field name="Order ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Employee Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Welcome Drink" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="main meal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Dessert" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Price" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<rectangle>
+				<reportElement x="388" y="0" width="167" height="82" backcolor="#003399" uuid="ce4cd396-8240-47c8-84ec-ad6a6c419232"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="449" y="62" width="100" height="20" forecolor="#FFFFFF" uuid="ebf36338-2984-4d9a-bd76-1455c43379e2"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Negombo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="449" y="42" width="100" height="20" forecolor="#FFFFFF" uuid="a68b0a6d-635f-498a-aeda-0961a7f38084"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Katana Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="449" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="f5f99f07-efba-4ca7-b36d-1634c0f3ad6f"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[KJ Enterprises PVT Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="449" y="22" width="100" height="20" forecolor="#FFFFFF" uuid="df47c137-f83d-4d87-ba02-927f01a1433e"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[10th Mile post,]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="187" y="7" width="163" height="20" uuid="5bc5c3c2-91e8-45c7-90a1-e58bbb6453e6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Catering Order Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="2" width="555" height="20" backcolor="#000000" uuid="1c34c999-c6d8-4410-976b-3ef0f270fa77"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="2" width="85" height="20" forecolor="#FFFFFF" uuid="098efbcc-ef18-4be7-898b-e682366fd02b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Order ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="b62af87d-21d4-4f6e-ac47-342a777ce8c7"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Employee Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="9ce7f239-a92f-481a-92ab-4e2f8b588660"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Welcome Drink]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="2" width="85" height="20" forecolor="#FFFFFF" uuid="04f93e5a-e149-4371-b72e-e50810d5b243"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Main meal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="e2e4ea04-8c16-475a-940f-359b3c4912d6"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dessert]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="2" width="84" height="20" forecolor="#FFFFFF" uuid="ae9c872d-60a7-468a-92eb-b4fc594e0fd5"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="6" width="555" height="20" uuid="e3d901de-7ee6-48ab-abed-1f89f9460d8d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="8" width="85" height="20" uuid="d51ae7b4-e8dc-4bfc-9921-0770d9c5838b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Order ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="85" y="8" width="100" height="20" uuid="7dfb6797-ad82-4058-968c-bb991f275ef2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Employee Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="8" width="100" height="20" uuid="d044132e-a127-46f0-b492-cdcc268f99f6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Welcome Drink}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="8" width="85" height="20" uuid="09654554-ab72-425e-94f6-edf20844a76d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{main meal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="8" width="100" height="20" uuid="158131ee-df7a-4d2b-af71-a14dca0d5345"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Dessert}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="471" y="8" width="84" height="20" uuid="1d00a513-6d66-467f-9c3f-9bd4bf8cf625"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
