@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e519d432-67cb-407e-85b6-36f9d520906b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM supplier]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="phone" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="133" splitType="Stretch">
+			<rectangle>
+				<reportElement x="399" y="0" width="156" height="78" forecolor="#0033CC" backcolor="#003399" uuid="f67fe394-b0e0-457f-9dc6-4314693921d4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="469" y="18" width="86" height="20" forecolor="#FFFFFF" uuid="7a630cb5-144f-4a55-bcd4-5d74721a54cd"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[  10th Mile Post,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="481" y="58" width="74" height="20" forecolor="#FFFFFF" uuid="c672d256-d887-4370-a806-b42d3766d0d0"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[      Negombo ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="481" y="38" width="74" height="20" forecolor="#FFFFFF" uuid="c26b3e60-adb2-4055-9d3b-7b76dbca7d59"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Katana Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="434" y="0" width="121" height="20" forecolor="#FFFFFF" uuid="a93d207e-f930-4a63-96f1-f0bb27baeecf"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ KJ Entreprises PVT Ltd]]></text>
+			</staticText>
+			<textField pattern="h.mm a">
+				<reportElement x="501" y="108" width="54" height="20" uuid="1d5c834f-e360-4e4d-afe3-cf01d0c98f65"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="455" y="88" width="100" height="20" uuid="18b01dad-d783-4bdf-974d-7db6d30c31d6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="469" y="108" width="32" height="20" uuid="8969e414-b7b9-4712-b02f-a88525601c47"/>
+				<textElement textAlignment="Right">
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="423" y="88" width="32" height="20" uuid="a7c52452-fcef-4959-96d9-82ce5ae9e706"/>
+				<textElement textAlignment="Right">
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="29" width="275" height="59" uuid="e234ebab-ee5e-4a10-b5cf-c7a5c6b77891"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[KJ Enterprises]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="183" y="15" width="194" height="20" uuid="c331d4a3-af78-40e2-b276-714d82682f49"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Supplier Management Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="183" y="31" width="194" height="1" uuid="3121ad57-0dcd-49f3-b5b2-957d3b092f38"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<rectangle>
+				<reportElement x="18" y="18" width="520" height="20" backcolor="#000000" uuid="f9a61617-5d81-4c35-af4c-ca185825f420"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="26" y="19" width="100" height="20" forecolor="#FFFFFF" uuid="93ab8565-705b-4a9b-b5f5-d5bbd41e8d5d"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Supplier ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="126" y="19" width="100" height="20" forecolor="#FFFFFF" uuid="af6e7082-aaaa-49c6-acee-fada2ede7576"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Supplier Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="19" width="100" height="20" forecolor="#FFFFFF" uuid="ce641225-1365-44ee-beb2-494c50f71b87"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phone No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="18" width="100" height="20" forecolor="#FFFFFF" uuid="2351c796-e273-4117-9f0c-8bbd36455192"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="19" width="100" height="20" forecolor="#FFFFFF" uuid="3a37a6d9-3e4e-4dfd-b36f-02f39e35bd76"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<rectangle>
+				<reportElement x="18" y="0" width="520" height="20" uuid="025d7c88-52c3-4891-86f9-b1efe4242d14"/>
+			</rectangle>
+			<textField>
+				<reportElement x="26" y="0" width="100" height="20" uuid="5b9c78c0-efcb-4630-9386-e1f1e7e851d4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="126" y="0" width="100" height="20" uuid="4c248465-eedf-4b91-9469-a9d51eeb662a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="100" height="20" uuid="33253afe-b58d-4c7a-889d-9f435bbb6262"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="0" width="100" height="20" uuid="5e4f5701-a8fb-4241-939b-6b8ef3a2f0b7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="0" width="100" height="20" uuid="3171caca-2030-4e81-ac11-fe2f6a2c6c66"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{product}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

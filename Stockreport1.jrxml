@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aeaa895d-ff22-44fa-a8f0-72b2c1aa2ced">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM inventory]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="quantity" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="level" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="176" splitType="Stretch">
+			<rectangle>
+				<reportElement x="399" y="0" width="156" height="78" forecolor="#0033CC" backcolor="#003399" uuid="0ba36a9b-02bc-4d24-b81c-8783417ad4ad"/>
+			</rectangle>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="469" y="88" width="100" height="20" uuid="ff431e34-4c92-4fed-8ce9-310f3d1f7722"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="h.mm a">
+				<reportElement x="515" y="108" width="54" height="20" uuid="34960def-c7cc-4af9-b7d8-575604e06d8e"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="469" y="18" width="86" height="20" forecolor="#FFFFFF" uuid="e807c713-ff9b-4d97-9481-18c3e2cef11d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[  10th Mile Post,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="481" y="38" width="74" height="20" forecolor="#FFFFFF" uuid="3a1a3a0b-562a-45ed-824f-6788111ba26c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Katana Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="481" y="58" width="74" height="20" forecolor="#FFFFFF" uuid="3eed7d06-88fe-4312-8529-0ba5f28cea72"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[      Negombo ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="434" y="0" width="121" height="20" forecolor="#FFFFFF" uuid="716e17a9-0af6-46e9-bfa9-e52f5475d477"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ KJ Entreprises PVT Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="88" width="32" height="20" uuid="4c5ac1e3-d451-4d3c-915a-41eaf3d5e34a"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="108" width="32" height="20" uuid="81e735ec-626f-40e5-b093-9f377ece4218"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="189" y="11" width="190" height="25" uuid="4796eeee-0e9e-4a07-82e8-b7c81ca3a904"/>
+				<textElement textAlignment="Center">
+					<font fontName="Georgia" size="14"/>
+				</textElement>
+				<text><![CDATA[Stock Management Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="189" y="26" width="190" height="1" uuid="44a6e9c9-79e8-4326-81cd-d85953c94dfb"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="56b76c92-b6ea-42a7-801f-1a37308d4695"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="75" height="20" forecolor="#FFFFFF" uuid="9eb22dad-00e4-430e-895d-ecf8c3f17f16"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Item Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="0" width="99" height="20" forecolor="#FFFFFF" uuid="63f1a242-8e90-4799-bffe-e55d4bf5305e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="0" width="102" height="20" forecolor="#FFFFFF" uuid="ce276262-2a8c-45ad-8ab8-41305a9277f7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="74" height="20" forecolor="#FFFFFF" uuid="f12c93fb-e82c-4d14-bf5b-a27c36444597"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="ef25ff8e-fe87-4c86-95bf-8d49579bee2b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Modified Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="0" width="105" height="20" forecolor="#FFFFFF" uuid="f29d3bb4-c7d3-445f-93cc-08a14e76ebad"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Re Order Level]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="469" y="10" width="80" height="20" uuid="aa17b4b9-4b16-4f31-a481-ad284c685fd3"/>
+				<textFieldExpression><![CDATA[$F{level}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="10" width="59" height="20" uuid="d7d4925c-30a7-4ce4-9634-7027fbc749b5"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="10" width="82" height="20" uuid="7e205213-e2b0-4146-a9be-8b82619debf7"/>
+				<textFieldExpression><![CDATA[$F{pname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="365" y="10" width="79" height="20" uuid="b5164774-7f29-4ab5-b19c-3729c8ff7886"/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="10" width="81" height="20" uuid="73b615e3-e127-468d-9c2d-320004020e93"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="10" width="54" height="20" uuid="56984e01-026b-4599-a841-a2e870211130"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="75" y="2" width="1" height="28" uuid="0d0950af-4756-42e8-a9dd-3628e1d4f684"/>
+			</line>
+			<line>
+				<reportElement x="276" y="2" width="1" height="28" uuid="ad7b1f54-8fa2-4c1f-bbc5-db41741d8eeb"/>
+			</line>
+			<line>
+				<reportElement x="174" y="2" width="1" height="28" uuid="feeb5934-bc9a-4f49-9860-d9fe87b76959"/>
+			</line>
+			<line>
+				<reportElement x="349" y="3" width="1" height="27" uuid="88ec7597-ee40-4982-a31b-34b6c5fbbdbc"/>
+			</line>
+			<line>
+				<reportElement x="450" y="2" width="1" height="29" uuid="de0edd28-f0ea-4b0e-9816-e91f88fa1bb6"/>
+			</line>
+			<line>
+				<reportElement x="0" y="30" width="555" height="1" uuid="17b114cd-2130-4f1b-87a4-365f9d275fd4"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
