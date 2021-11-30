@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2956c59e-067b-464d-a9bd-cb44c4e4bf1c">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM employee]]>
+	</queryString>
+	<field name="Emp_ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Emp_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_Of_Birth" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Contact_Number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Salary" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="93" splitType="Stretch">
+			<rectangle>
+				<reportElement x="367" y="-7" width="198" height="86" forecolor="#003399" backcolor="#003399" uuid="996db82c-77c2-498b-90b0-36c756f5ee4d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="477" y="19" width="78" height="20" forecolor="#FFFFFF" uuid="fd8faec3-a0e8-4860-b7c5-cdb562c18bf8"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10th Mile Post,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="39" width="67" height="20" forecolor="#FFFFFF" uuid="09a1f38d-2bab-4c81-974c-36ba70b7cc01"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Katana Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="502" y="59" width="53" height="20" forecolor="#FFFFFF" uuid="d2181df7-1449-4abe-9f88-99a3abc6c3e5"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Negombo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="434" y="-1" width="121" height="20" forecolor="#FFFFFF" uuid="dbe9f99f-36ed-46cf-8dc5-65b186842ff4"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KJ Entreprisess PVT Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="388" height="75" uuid="c9cc6dba-94d9-4fee-be4d-52be0c7ece8c"/>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="36"/>
+				</textElement>
+				<text><![CDATA[KJ Enterprises ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="174" y="11" width="212" height="24" uuid="92e70e1e-1152-48bd-a504-129c03970eca"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee Management Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="13" width="555" height="34" backcolor="#000000" uuid="6f17012c-31fd-4b02-945c-1ad58880863f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="13" width="53" height="34" forecolor="#FFFFFF" uuid="18e6404b-f4b7-44ab-b0bb-238f4719b6bb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="13" width="81" height="34" forecolor="#FFFFFF" uuid="24c59b5b-0342-470e-aa9c-1da512cc2074"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="13" width="66" height="34" forecolor="#FFFFFF" uuid="b555ae7a-1b12-4453-af94-ed8e1ed23002"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="134" y="13" width="75" height="34" forecolor="#FFFFFF" uuid="bc756ee3-39e8-452b-96dd-61614500bdfd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="13" width="53" height="34" forecolor="#FFFFFF" uuid="68d4663f-9202-4c40-aa78-1ae0b61c3fd8"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Birth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="13" width="68" height="34" forecolor="#FFFFFF" uuid="96a6a7a0-c116-4778-818f-033047887253"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="13" width="48" height="34" forecolor="#FFFFFF" uuid="158d31b6-1d23-4ca9-87cb-19bbb5a7653c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="448" y="13" width="40" height="34" forecolor="#FFFFFF" uuid="c27f335a-2391-4b16-9581-4dda4cb64eda"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="502" y="13" width="53" height="34" forecolor="#FFFFFF" uuid="7c1158e8-5819-433c-90a2-30954e3bf43d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="57" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="53" height="55" uuid="c068e3c2-336b-4487-9735-e4b825c1430c"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Emp_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="53" y="0" width="81" height="55" uuid="2447d280-633d-4963-8938-76f03fc18589"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Emp_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="0" width="75" height="55" uuid="2ee4f265-8557-4953-9e08-784bd649e416"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="0" width="66" height="55" uuid="c8a92dc7-9867-49fa-a48c-16f570ef635d"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="68" height="55" uuid="fb778ec4-128c-4196-88e3-e7337a717090"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="343" y="0" width="53" height="55" uuid="3cc17209-c8ef-4c84-b685-be5b86e3235d"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Date_Of_Birth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="0" width="48" height="55" uuid="9e878760-dd36-4adb-a7ec-880d34abb498"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="449" y="0" width="39" height="55" uuid="abe3b3f7-6284-4ee0-a3c3-ebc8536a3166"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Contact_Number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="501" y="0" width="54" height="55" uuid="50f7fae1-0a53-4708-8fe3-ae2c19cef08b"/>
+				<textElement>
+					<font fontName="Century Gothic" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Salary}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="55" width="555" height="1" uuid="698905f8-a4fe-4ed5-9742-a7052315c1b3"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

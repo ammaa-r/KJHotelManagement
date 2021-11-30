@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d1532058-e4c7-48e3-856f-39068a3ea400">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from salary]]>
+	</queryString>
+	<field name="Employe_ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Employee_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Basic_Salary" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Total_Salary" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Salary_Payement_Type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Employee_Task" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Over_Time_Salary" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="113" splitType="Stretch">
+			<rectangle>
+				<reportElement x="357" y="15" width="198" height="86" forecolor="#003399" backcolor="#003399" uuid="4dc056c6-b421-4dc5-bbfc-c28c4c46808b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="467" y="41" width="78" height="20" forecolor="#FFFFFF" uuid="06aec378-dc4c-486b-8cbc-73a71ea5a752"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10th Mile Post,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="478" y="61" width="67" height="20" forecolor="#FFFFFF" uuid="c6cfc299-6490-4a30-861b-60fb3183b53b"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Katana Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="21" width="121" height="20" forecolor="#FFFFFF" uuid="d8722a3a-e30f-4aa4-87cb-be5ca9ffac30"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KJ Entreprisess PVT Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="492" y="81" width="53" height="20" forecolor="#FFFFFF" uuid="48c3c517-55c4-4a50-a314-987e6bf56467"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri Light" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Negombo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="13" width="309" height="75" uuid="e074a933-9b9b-4d59-9530-5c932e0c7cf6"/>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="36"/>
+				</textElement>
+				<text><![CDATA[KJ Enterprises ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="172" y="13" width="222" height="20" uuid="0ece24ef-4ed4-4e28-a910-4744d5938f0e"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Employee Salary Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<rectangle>
+				<reportElement x="28" y="2" width="503" height="20" backcolor="#000000" uuid="6bc08a1f-f9da-4684-ad22-594eb532065e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="38" y="2" width="81" height="20" forecolor="#FFFFFF" uuid="87add7ad-8fca-425a-8b65-6aba7ebee9e1"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Employe ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="8363b1b5-e19c-48e4-b32c-485b0a4df6cd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Employee Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="219" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="179364f7-52dd-4df7-a9ed-e47750769a5a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Basic Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="319" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="06a9f0a9-bc81-4fa4-8d7a-48d4caabc638"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Total Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="dceb8305-2ede-4be4-844d-56c673d82a76"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Over Time Salary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<rectangle>
+				<reportElement x="28" y="0" width="503" height="20" uuid="8a460763-83a1-4fa3-a919-c8410e920011"/>
+			</rectangle>
+			<textField>
+				<reportElement x="38" y="2" width="81" height="20" uuid="1b41bea4-7525-4df1-9906-ab83b26b739d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Employe_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="0" width="100" height="20" uuid="28c77f31-ff5d-4b42-826c-202666be3bb3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Employee_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="219" y="0" width="100" height="20" uuid="dd8b6ea9-49df-4e12-bcb5-496fa80e514f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Basic_Salary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="319" y="0" width="100" height="20" uuid="9ac438a9-63c7-4c5e-9d8d-a8bba30ed1f3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Total_Salary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="0" width="100" height="20" uuid="0cf72930-f484-4160-824d-561199d2f586"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Over_Time_Salary}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="119" y="2" width="1" height="16" uuid="1de71674-79e2-434c-8fa8-ef57ad185e73"/>
+			</line>
+			<line>
+				<reportElement x="218" y="1" width="1" height="19" uuid="68ed34a2-7e04-4a33-9611-0503b23fe828"/>
+			</line>
+			<line>
+				<reportElement x="319" y="2" width="1" height="18" uuid="c797c589-86ea-4463-a342-c8c5fbfd0e34"/>
+			</line>
+			<line>
+				<reportElement x="418" y="2" width="1" height="18" uuid="44221e14-4018-4863-a18f-75fe0e657acb"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
