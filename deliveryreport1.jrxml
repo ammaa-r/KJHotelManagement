@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aafc8f8f-3a03-4d21-9722-039b4c2f0abe">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from delivery]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="number" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="111" splitType="Stretch">
+			<rectangle>
+				<reportElement x="392" y="0" width="163" height="88" backcolor="#0033CC" uuid="7cdc5cc1-ab10-429b-8852-52661b73b5f1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="419" y="0" width="136" height="20" forecolor="#FFFFFF" uuid="3c303947-1136-4a86-b4e2-964ca7c3266c"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[KJ Entreprises PVT Ltd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="20" width="100" height="20" forecolor="#FFFFFF" uuid="d62bf3d5-4eab-4177-acb7-3dc177e53af6"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[10th Mile Post,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="41" width="100" height="20" forecolor="#FFFFFF" uuid="d020a810-c637-4b4e-baa7-ecee7cf53c1a"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Katana Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="61" width="100" height="20" forecolor="#FFFFFF" uuid="358df322-b566-4a84-a50c-4cae73c4a574"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Negombo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="4" width="268" height="84" forecolor="#0000CC" uuid="5ddf7b56-b159-4db5-8a25-34fba57c97e0"/>
+				<textElement>
+					<font size="36" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[KJ Entreprises]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="218" y="11" width="136" height="20" uuid="9edb2a2a-5b38-452d-b5c2-9c599f5cdbc7"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Delivery Report]]></text>
+			</staticText>
+			<line>
+				<reportElement x="218" y="31" width="136" height="1" uuid="ca32408a-2651-4c40-9e7d-976e1248371f"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="2" width="555" height="20" backcolor="#000000" uuid="ca92d525-c838-43cb-9958-da5a06aa082d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="2" width="37" height="20" forecolor="#FFFFFF" uuid="c15b2e21-f891-4f26-8bfe-7391d694d0db"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="fc350569-0f41-4d05-99b9-db813ab4553b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="e1cf73fb-c902-49f6-86d5-47407ad912d0"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="b28d7517-803b-4186-bbdd-4abe331f9648"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="2" width="58" height="20" forecolor="#FFFFFF" uuid="8ce3163b-3037-42ad-86ac-b2dde715490c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="2" width="78" height="20" forecolor="#FFFFFF" backcolor="#000000" uuid="95c6c6a4-2e66-4148-a59f-c90d4238cee8"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="0" y="5" width="555" height="20" uuid="1257476a-1b77-4876-844a-10a3a5f2aacb"/>
+			</rectangle>
+			<textField>
+				<reportElement x="58" y="6" width="100" height="20" uuid="24dd4ceb-d8d3-4cee-a0f7-ee637b1f70f2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="6" width="100" height="20" uuid="4db0c576-01eb-4657-9977-975d03b5f059"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="6" width="100" height="20" uuid="50dee28b-56f2-4908-b733-03472069b534"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="6" width="37" height="20" uuid="74ac2f1d-ec36-4853-a272-5bd21125caad"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="6" width="58" height="20" uuid="6ca38cc1-0986-45e3-9de1-560b989e670f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="6" width="78" height="20" uuid="826be0d3-18b0-492a-ad90-a32cc9277ad2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

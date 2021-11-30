@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2a701b7-3e13-4d7c-956b-607a02145c0d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from product_add]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ProductName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Price" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement x="133" y="0" width="264" height="71" forecolor="#0033CC" uuid="472e96bd-612f-432b-9771-cb7476ff5225"/>
+				<textElement>
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KJ Enterprises]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="209" y="0" width="100" height="20" uuid="f69fd4a9-e299-42b3-abf9-d775e9379f39"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Reprots]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="96" y="0" width="331" height="22" forecolor="#000000" backcolor="#000000" uuid="81838529-679f-47b1-b37c-1948e1ec2954"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="96" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="6c8cc0c6-6ddf-4cb4-935d-2d23139477ff"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="29e52726-568d-4bd0-815e-0015fc655c6b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ProductName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="2" width="100" height="20" forecolor="#FFFFFF" uuid="aa9cb182-0727-4cc7-865b-031fded65cc8"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="96" y="12" width="330" height="20" backcolor="#000000" uuid="e93eb1b8-9c76-4efe-8bf4-15e8ccf68305"/>
+			</rectangle>
+			<textField>
+				<reportElement x="95" y="12" width="100" height="20" forecolor="#FFFFFF" uuid="b3544be0-ee83-4e57-866b-26b1e32c8de1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="12" width="100" height="20" forecolor="#FFFFFF" uuid="15a333c4-816b-450d-9c1d-8ad56103166b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{ProductName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="12" width="100" height="20" forecolor="#FFFFFF" uuid="bd451b8f-b700-4c66-ba9b-af9fe50868e9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="29" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="37" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
